@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Prediction
+{% endblock %}
+
+{% block main %}
+<h1>College Rank Prediction</h1>
+<br>
+<div class="m-5"><!--table-responsive-->
+    <table class="table-content"><!--table table-bordered table-dark table-responsive table-hover-->
+        <thead>
+
+            <th>Institute Name</th>
+            <th>Branch</th>
+            <th>Branch Code</th>
+            <th>Branch Status</th>
+            <th>Cutoff 23 State</th>
+            <th>Cutoff 23 Home</th>
+            <th>Cutoff 22 State</th>
+            <th>Cutoff 22 Home</th>
+            <th>Location</th>
+            <th>More</th>
+        </thead>
+        {% for row in clg_list %}
+        
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td>{{ row[5] }}</td>
+            <td>{{ row[6] }}</td>
+            <td>{{ row[7] }}</td>
+            
+            <td>{{ row[0].split(",")[-1] }}</td>
+            <td><a href="http://www.google.com/search?q={{ row[0] }}" target="blank">link</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

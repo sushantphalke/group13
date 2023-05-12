@@ -1,0 +1,475 @@
+{% extends "layout.html" %}
+
+{% block title %}
+College Merit
+{% endblock %}
+
+{% block main %}
+<form action="/CollegeCutoff" method="POST">
+  <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+    <div class="loginbackground padding-top--64">
+      <div class="loginbackground-gridContainer">
+        <div class="box-root flex-flex" style="grid-area: top / start / 8 / end;">
+          <div class="box-root"
+            style="background-image: linear-gradient(white 0%, rgb(247, 250, 252) 33%); flex-grow: 1;">
+          </div>
+        </div>
+        <div class="box-root flex-flex" style="grid-area: 4 / 2 / auto / 5;">
+          <div class="box-root box-divider--light-all-2 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+        </div>
+        <div class="box-root flex-flex" style="grid-area: 6 / start / auto / 2;">
+          <div class="box-root box-background--blue800" style="flex-grow: 1;"></div>
+        </div>
+        <div class="box-root flex-flex" style="grid-area: 7 / start / auto / 4;">
+          <div class="box-root box-background--blue animationLeftRight" style="flex-grow: 1;"></div>
+        </div>
+        <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6;">
+          <div class="box-root box-background--gray100 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+        </div>
+        <div class="box-root flex-flex" style="grid-area: 2 / 15 / auto / end;">
+          <div class="box-root box-background--cyan200 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+        </div>
+        <div class="box-root flex-flex" style="grid-area: 3 / 14 / auto / end;">
+          <div class="box-root box-background--blue animationRightLeft" style="flex-grow: 1;"></div>
+        </div>
+        <div class="box-root flex-flex" style="grid-area: 4 / 17 / auto / 20;">
+          <div class="box-root box-background--gray100 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+        </div>
+        <div class="box-root flex-flex" style="grid-area: 5 / 14 / auto / 17;">
+          <div class="box-root box-divider--light-all-2 animationRightLeft tans3s" style="flex-grow: 1;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+      <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+        <h1><b>College Merit Prediction 2023</b></h1>
+      </div>
+      <div class="formbg-outer">
+        <div class="formbg">
+          <div class="formbg-inner padding-horizontal--48">
+            <span class="padding-bottom--15">Please provide details asked below</span>
+            <div class="field padding-bottom--24">
+              <label for="Institute">Institute Name</label>
+              <select class="field padding-bottom--24" style="width: 350px; border-radius: 3px; border-color: cornflowerblue; padding:10px" name="Institute" placeholder="Institute Name">
+                <option> Institute Name </option>
+                <option> Other </option>
+                <option>.S.B.& M. School of Technology, Nande Village </option>
+                <option>A. P. Shah nstitute of Technology, Thane </option>
+                <option>Adarsh Shikshan Prasarak Mandal's K. T. Patil College of Engineering and Technology, Osmanabad
+                </option>
+                <option>Aditya Engineering College , Beed </option>
+                <option>Adsul's Technical Campus, Chas Dist. Ahmednagar </option>
+                <option>Agnel Charities' FR. C. Rodrigues nstitute of Technology, Vashi, Navi Mumbai </option>
+                <option>Ahmednagar Jilha Maratha Vidya Prasarak Samajache, Shri. Chhatrapati Shivaji Maharaj College of
+                  Engineering, Nepti </option>
+                <option>Al-Ameen Educational and Medical Foundation, College of Engineering, Koregaon, Bhima </option>
+                <option>Alard Charitable Trust's Alard College of Engineering and Management, Pune </option>
+                <option>Aldel Education Trust's St. John College of Engineering & Management, Vevoor, Palghar </option>
+                <option>All ndia Shri Shivaji Memorial Society's College of Engineering, Pune </option>
+                <option>All ndia Shri Shivaji Memorial Society's nstitute of nformation Technology,Pune </option>
+                <option>Amar Seva Mandal's Shree Govindrao Vanjari College of Engineering & Technology, Nagpur </option>
+                <option>Amruta Vaishnavi Education & Welfare Trust's Shatabdi nstitute of Engineering & Research,
+                  Agaskhind Tal. Sinnar </option>
+                <option>Amrutvahini Sheti & Shikshan Vikas Sanstha's Amrutvahini College of Engineering, Sangamner
+                </option>
+                <option>Anantrao Pawar College of Engineering & Research, Pune </option>
+                <option>Anjuman College of Engineering & Technology, Nagpur </option>
+                <option>Anjuman-I-Islam's Kalsekar Technical Campus, Panvel </option>
+                <option>Anjuman-I-Islam's M.H. Saboo Siddik College of Engineering, Byculla, Mumbai </option>
+                <option>Ankush Shikshan Sanstha's G. H. Raisoni nstitute of Engineering & Technology, Nagpur </option>
+                <option>Ankush Shikshan Sanstha's G.H.Raisoni College of Engineering, Nagpur </option>
+                <option>Annasaheb Dange College of Engineering and Technology, Ashta, Sangli </option>
+                <option>Atharva College of Engineering,Malad(West),Mumbai </option>
+                <option>Aurangabad College of Engineering, Naygaon Savangi, Aurangabad </option>
+                <option>B.R. Harne College of Engineering & Technology, Karav, Tal-Ambernath. </option>
+                <option>B.R.A.C.T's Vishwakarma nstitute of nformation Technology, Kondhwa (Bk.), Pune </option>
+                <option>Bajaj nstitute of Technology, Wardha </option>
+                <option>Bansilal Ramnath Agarawal Charitable Trust's Vishwakarma nstitute of Technology, Bibwewadi, Pune
+                </option>
+                <option>Bapurao Deshmukh College of Engineering, Sevagram </option>
+                <option>Bhagwant nstitute of Technology, Barshi </option>
+                <option>Bharat College of Engineering, Kanhor, Badlapur(W) </option>
+                <option>Bharati Vidyapeeth College of Engineering, Navi Mumbai </option>
+                <option>Bharati Vidyapeeth's College of Engineering, Kolhapur </option>
+                <option>Bharati Vidyapeeth's College of Engineering,Lavale, Pune </option>
+                <option>Bhartiya Vidya Bhavan's Sardar Patel nstitute of Technology , Andheri, Mumbai </option>
+                <option>Brahma Valley College of Engineering & Research, Trimbakeshwar, Nashik </option>
+                <option>CSMSS Chh. Shahu College of Engineering, Aurangabad </option>
+                <option>Chhartrapati Shivaji Maharaj nstitute of Technology, Shedung, Panvel </option>
+                <option>Choudhary Attar Singh Yadav Memorial Trust,Siddhant College of Engineering, Maval </option>
+                <option>College of Engineering and Technology ,North Maharashtra Knowledge City, Jalgaon </option>
+                <option>College of Engineering, Pune </option>
+                <option>D.Y. Patil College of Engineering and Technology, Kolhapur </option>
+                <option>D.Y.Patil Education Society's,D.Y.Patil Technical Campus, Faculty of Engineering & Faculty of
+                  Management,Talsande,Kolhapur. </option>
+                <option>Dattajirao Kadam Technical Education Society's Textile & Engineering nstitute, chalkaranji.
+                </option>
+                <option>Dattakala Group Of nstitutions, </option>
+                <option>Deogiri nstitute of Engineering and Management Studies, Aurangabad </option>
+                <option>Department of Technology, Shivaji University, Kolhapur </option>
+                <option>Dhole Patil Education Society, Dhole Patil College of Engineering, Wagholi, Tal. Haveli
+                </option>
+                <option>Dilkap Research nstitute Of Engineering and Management Studies, At.Mamdapur, Post- Neral, Tal-
+                  Karjat, Mumbai </option>
+                <option>Dnyanshree nstitute Engineering and Technology, Satara </option>
+                <option>Dr. Ashok Gujar Technical nstitute's Dr. Daulatrao Aher College of Engineering, Karad </option>
+                <option>Dr. Babasaheb Ambedkar Technological University, Lonere </option>
+                <option>Dr. D. Y. Patil Pratishthan's D.Y.Patil College of Engineering Akurdi, Pune </option>
+                <option>Dr. D. Y. Patil School OF Engineering, Lohegaon, Pune </option>
+                <option>Dr. D. Y. Patil Vidya Pratishthan Society Dr .D. Y. Patil nstitute of Engineering & Technology,
+                  Pimpri,Pune </option>
+                <option>Dr. D.Y.Patil nstitute of Engineering, Management & Reseach, Akurdi, Pune </option>
+                <option>Dr. J. J. Magdum Charitable Trust's Dr. J.J. Magdum College of Engineering, Jaysingpur </option>
+                <option>Dr. Vithalrao Vikhe Patil College of Engineering, Ahmednagar </option>
+                <option>Dr.Rajendra Gode nstitute of Technology & Research, Amravati </option>
+                <option>Dwarka Bahu Uddeshiya Gramin Vikas Foundation, Rajarshri Shahu College of Engineering, Buldhana
+                </option>
+                <option>Everest Education Society, Group of nstitutions (Integrated Campus), Ohar </option>
+                <option>Excelsior Education Society's K.C. College of Engineering and Management Studies and Research,
+                  Kopri, Thane (E) </option>
+                <option>Fabtech Technical Campus College of Engineering and Research, Sangola </option>
+                <option>Fr. Conceicao Rodrigues College of Engineering, Bandra,Mumbai </option>
+                <option>G. H. Raisoni nstitute of Business Management,Jalgaon </option>
+                <option>G. S. Mandal's Maharashtra nstitute of Technology, Aurangabad </option>
+                <option>G.H.Raisoni College of Engineering & Management, Wagholi, Pune </option>
+                <option>G.M.Vedak nstitute of Technology, Tala, Raigad. </option>
+                <option>Genba Sopanrao Moze College of Engineering, Baner-Balewadi, Pune </option>
+                <option>Genba Sopanrao Moze Trust Parvatibai Genba Moze College of Engineering,Wagholi, Pune </option>
+                <option>Gharda Foundation's Gharda nstitute of Technology,Khed, Ratnagiri </option>
+                <option>Godavari Foundation's Godavari College Of Engineering, Jalgaon </option>
+                <option>Gokhale Education Society's, R.H. Sapat College of Engineering, Management Studies and Research,
+                  Nashik </option>
+                <option>Gondia Education Society's Manoharbhai Patel nstitute Of Engineering & Technology, Shahapur,
+                  Bhandara </option>
+                <option>Government College of Engineering & Research, Avasari Khurd </option>
+                <option>Government College of Engineering, Amravati </option>
+                <option>Government College of Engineering, Aurangabad </option>
+                <option>Government College of Engineering, Chandrapur </option>
+                <option>Government College of Engineering, Jalgaon </option>
+                <option>Government College of Engineering, Karad </option>
+                <option>Government College of Engineering, Nagpur </option>
+                <option>Government Engineering College, Yavatmal </option>
+                <option>Guru Gobind Singh College of Engineering & Research Centre, Nashik. </option>
+                <option>Guru Nanak nstitute of Engineering & Technology,Kalmeshwar, Nagpur </option>
+                <option>Gurunanak Educational Society's Gurunanak nstitute of Technology, Nagpur </option>
+                <option>Haji Jamaluddin Thim Trust's Theem College of Engineering, At. Villege Betegaon, Boisar
+                </option>
+                <option>Hi-Tech nstitute of Technology, Aurangabad </option>
+                <option>Hindi Seva Mandal's Shri Sant Gadgebaba College of Engineering & Technology, Bhusawal </option>
+                <option>Holy-Wood Academy's Sanjeevan Engineering and Technology nstitute, Panhala </option>
+                <option>Hon. Shri. Babanrao Pachpute Vichardhara Trust, Group of nstitutions (Integrated
+                  Campus)-Parikrama, Kashti Shrigondha, </option>
+                <option>Hope Foundation and research center's Finolex Academy of Management and Technology, Ratnagiri
+                </option>
+                <option>JMSS Shri Shankarprasad Agnihotri College of Engineering, Wardha </option>
+                <option>JSPM Narhe Technical Campus, Pune. </option>
+                <option>JSPM'S Jaywantrao Sawant College of Engineering,Pune </option>
+                <option>JSPM's mperial College of Engineering and Research, Wagholi, Pune </option>
+                <option>Jagadamba Education Soc. Nashik's S.N.D. College of Engineering & Reserch, Babulgaon </option>
+                <option>Jagadambha Bahuuddeshiya Gramin Vikas Sanstha's Jagdambha College of Engineering and Technology,
+                  Yavatmal </option>
+                <option>Jai Mahakali Shikshan Sanstha, Agnihotri College of Engineering, Sindhi(Meghe) </option>
+                <option>Jaidev Education Society, J D College of Engineering and Management, Nagpur </option>
+                <option>Jaihind College Of Engineering,Kuran </option>
+                <option>Jamia nstitute Of Engineering And Management Studies, Akkalkuwa </option>
+                <option>Janata Shikshan Prasarak Mandal’s Babasaheb Naik College Of Engineering, Pusad </option>
+                <option>Jawahar Education Society's Annasaheb Chudaman Patil College of Engineering,Kharghar, Navi
+                  Mumbai </option>
+                <option>Jawahar Education Society's nstitute of Technology, Management & Research, Nashik. </option>
+                <option>Jawaharlal Darda nstitute of Engineering and Technology, Yavatmal </option>
+                <option>Jayawant Shikshan Prasarak Mandal, Bhivarabai Sawant nstitute of Technology & Research, Wagholi
+                </option>
+                <option>Jaywant College of Engineering & Management, Kille Macchindragad Tal. Walva </option>
+                <option>Jaywant Shikshan Prasarak Mandal's,Rajarshi Shahu College of Engineering, Tathawade, Pune
+                </option>
+                <option>K J Somaiya nstitute of Engineering and nformation Technology, Sion, Mumbai </option>
+                <option>K. C. E. Societys College of Engineering and nformation Technology, Jalgaon </option>
+                <option>K. E. Society's Rajarambapu nstitute of Technology, Walwa, Sangli </option>
+                <option>K. J.'s Educational nstitut Trinity College of Engineering and Research, Pisoli, Haveli
+                </option>
+                <option>K. K. Wagh nstitute of Engineering Education and Research, Nashik </option>
+                <option>K.D.K. College of Engineering, Nagpur </option>
+                <option>K.D.M. Education Society, Vidharbha nstitute of Technology,Umred Road ,Nagpur </option>
+                <option>K.J.'s Educational nstitute's K.J.College of Engineering & Management Research, Pisoli </option>
+                <option>K.V.N. Naik S. P. Sansth's Loknete Gopinathji Munde nstitute of Engineering Education &
+                  Research, Nashik. </option>
+                <option>KJEI's Trinity Academy of Engineering, Yewalewadi, Pune </option>
+                <option>KSGBS's Bharat- Ratna ndira Gandhi College of Engineering, Kegaon, Solapur </option>
+                <option>Kai Amdar Bramhadevdada Mane Shikshan & Samajik Prathistan's Bramhadevdada Mane nstitute of
+                  Technology, Solapur </option>
+                <option>Kalyani Charitable Trust, Late Gambhirrao Natuba Sapkal College of Engineering, Anjaneri,
+                  Trimbakeshwar Road, Nashik </option>
+                <option>Kavi Kulguru nstitute of Technology & Science, Ramtek </option>
+                <option>Keystone School of Engineering, Pune </option>
+                <option>Kolhapur nstitute of Technology's College of Engineering(Autonomous), Kolhapur </option>
+                <option>Konkan Gyanpeeth College of Engineering, Karjat </option>
+                <option>Koti Vidya Charitable Trust's Smt. Alamuri Ratnamala nstitute of Engineering and Technology,
+                  Sapgaon, Tal. Shahapur </option>
+                <option>Krushi Jivan Vikas Pratishthan, Ballarpur nstitute of Technology, Mouza Bamni </option>
+                <option>Late Shri. Vishnu Waman Thakur Charitable Trust, Viva nstitute of Technology, Shirgaon </option>
+                <option>Laxminarayan nstitute of Technology, Nagpur </option>
+                <option>Leela Education Society, G.V. Acharya nstitute of Engineering and Technology, Shelu, Karjat
+                </option>
+                <option>Lokmanya Tilak College of Engineering, Kopar Khairane, Navi Mumbai </option>
+                <option>Lokmanya Tilak Jankalyan Shikshan Sanstha, Priyadarshani College of Engineering, Nagpur
+                </option>
+                <option>Lokmanya Tilak Jankalyan Shikshan Sastha, Priyadarshini J. L. College Of Engineering, Nagpur
+                </option>
+                <option>Loknete Hanumantrao Charitable Trust's Adarsh nstitute of Technology and Research Centre,
+                  Vita,Sangli </option>
+                <option>M.D. Yergude Memorial Shikshan Prasarak Mandal's Shri Sai College of Engineering & Technology,
+                  Badravati </option>
+                <option>M.G.M.'s College of Engineering and Technology, Kamothe, Navi Mumbai </option>
+                <option>M.S. Bidve Engineering College, Latur </option>
+                <option>MET Bhujbal Knowledge City MET League's Engineering College, Adgaon, Nashik. </option>
+                <option>MIT Academy of Engineering,Alandi, Pune </option>
+                <option>Mahatma Basaweshwar Education Society's College of Engineering, Ambejogai </option>
+                <option>Mahatma Education Society's Pillai College of Engineering, New Panvel </option>
+                <option>Mahatma Education Society's Pillai HOC College of Engineering & Technology, Tal. Khalapur. Dist.
+                  Raigad </option>
+                <option>Mahatma Gandhi Missions College of Engineering, Hingoli Rd, Nanded. </option>
+                <option>Mahavir Education Trust's Shah & Anchor Kutchhi Engineering College, Mumbai </option>
+                <option>Maitraya Education Society, Nagarjuna nstitute of Engineering Technology & Management, Nagpur
+                </option>
+                <option>Manav School of Engineering & Technology, Gut No. 1035 Nagpur Surat Highway, NH No. 6 Tal.Vyala,
+                  Balapur, Akola, 444302 </option>
+                <option>Manjara Charitable Trust's Rajiv Gandhi nstitute of Technology, Mumbai </option>
+                <option>Marathwada Mitra Mandal's College of Engineering, Karvenagar, Pune </option>
+                <option>Marathwada Mitra Mandal's nstitute of Technology, Lohgaon, Pune </option>
+                <option>Marathwada Shikshan Prasarak Mandal's Shri Shivaji nstitute of Engineering and Management
+                  Studies, Parbhani </option>
+                <option>Matoshri College of Engineering and Research Centre, Eklahare, Nashik </option>
+                <option>Matoshri Pratishan's Group of nstitutions (Integrated Campus), Kupsarwadi , Nanded </option>
+                <option>Matsyodari Shikshan Sansatha's College of Engineering and Technology, Jalna </option>
+                <option>Maulana Mukhtar Ahmad Nadvi Technical Campus, Malegaon. </option>
+                <option>Mauli Group of nstitutions, College of Engineering and Technology, Shegaon. </option>
+                <option>Metropolitan nstitute of Technology & Management, Sukhalwad, Sindhudurg. </option>
+                <option>Modern Education Society's College of Engineering, Pune </option>
+                <option>N. B. Navale Sinhgad College of Engineering, Kegaon, solapur </option>
+                <option>N.Y.S.S.'s Datta Meghe College of Engineering, Airoli, Navi Mumbai </option>
+                <option>NBN Sinhgad Technical nstitutes Campus, Pune </option>
+                <option>Nagaon Education Society's Gangamai College of Engineering, Nagaon, Tal Dist Dhule </option>
+                <option>Nagnathappa Halge Engineering College, Parli, Beed </option>
+                <option>Nanasaheb Mahadik College of Engineering,Walwa, Sangli. </option>
+                <option>Nashik District Maratha Vidya Prasarak Samaj's Karmaveer Adv.Babaurao Ganpatrao Thakare College
+                  of Engineering, Nashik </option>
+                <option>Navsahyadri Education Society's Group of nstitutions </option>
+                <option>New Horizon nstitute of Technology & Management, Thane </option>
+                <option>Nutan College of Engineering and Research, Talegaon Dabhade Tal. Maval, Pune </option>
+                <option>Nutan Maharashtra Vidya Prasarak Mandal, Nutan Maharashtra nstitute of Engineering &Technology,
+                  Talegaon station, Pune </option>
+                <option>P. R. Pote (Patil) Education & Welfare Trust's Group of nstitution(Integrated Campus), Amravati
+                </option>
+                <option>P.K. Technical Campus, Pune. </option>
+                <option>P.S.G.V.P. Mandal's D.N. Patel College of Engineering, Shahada, Dist. Nandurbar </option>
+                <option>Padmabhushan Vasantdada Patil Pratishthans College of Engineering, Sion,Mumbai </option>
+                <option>Padmashri Dr. V.B. Kolte College of Engineering, Malkapur, Buldhana </option>
+                <option>Paramhansa Ramkrishna Maunibaba Shikshan Santha's , Anuradha Engineering College, Chikhali
+                </option>
+                <option>Peoples Education Society's College of Engineering, Aurangabad </option>
+                <option>Phaltan Education Society's College of Engineering Thakurki Tal- Phaltan Dist-Satara </option>
+                <option>Pimpri Chinchwad Education Trust, Pimpri Chinchwad College of Engineering, Pune </option>
+                <option>Pradnya Niketan Education Society's Nagesh Karajagi Orchid College of Engineering & Technology,
+                  Solapur </option>
+                <option>Pravara Rural College of Engineering, Loni, Pravaranagar, Ahmednagar. </option>
+                <option>Pravara Rural Education Society's Sir Visvesvaraya nstitute of Technology, Chincholi Dist.
+                  Nashik </option>
+                <option>Priyadarshini Bhagwati College of Engineering, Harpur Nagar, Umred Road,Nagpur </option>
+                <option>Prof Ram Meghe College of Engineering and Management, Badnera </option>
+                <option>Prof. Ram Meghe nstitute of Technology & Research, Amravati </option>
+                <option>Progressive Education Society's Modern College of Engineering, Pune </option>
+                <option>Pune District Education Association's College of Engineering, Pune </option>
+                <option>Pune Vidyarthi Griha's College Of Engineering, Nashik </option>
+                <option>Pune Vidyarthi Griha's College of Engineering and Technology, Pune </option>
+                <option>Pune nstitute of Computer Technology, Dhankavdi, Pune </option>
+                <option>R. C. Patel nstitute of Technology, Shirpur </option>
+                <option>Rajendra Mane College of Engineering & Technology Ambav Deorukh </option>
+                <option>Rajgad Dnyanpeeth's Technical Campus,Dhangwadi, Bhor </option>
+                <option>Rajiv Gandhi College of Engineering Research & Technology Chandrapur </option>
+                <option>Rajiv Gandhi College of Engineering, At Post Karjule Hariya Tal.Parner, Dist.Ahmednagar
+                </option>
+                <option>Rasiklal M. Dhariwal Sinhgad Technical nstitutes Campus, Warje, Pune. </option>
+                <option>Rayat Shikshan Sanstha's Karmaveer Bhaurao Patil College of Engineering, Satara </option>
+                <option>Rizvi Education Society's Rizvi College of Engineering, Bandra,Mumbai </option>
+                <option>S K N Sinhgad College of Engineering, Korti Tal. Pandharpur Dist Solapur </option>
+                <option>S.D.N.C.R.E.S'S.Late Narayandas Bhawandas Chhabada nstitute of Engineering & Technology, Satara
+                </option>
+                <option>S.I.E.S. Graduate School of Technology, Nerul, Navi Mumbai </option>
+                <option>S.S.P.M.'s College of Engineering, Kankavli </option>
+                <option>SKN Sinhgad nstitute of Technology & Science, Kusgaon(BK),Pune. </option>
+                <option>SNJB's Late Sau. Kantabai Bhavarlalji Jain College of Engineering, (Jain Gurukul),
+                  Neminagar,Chandwad,(Nashik) </option>
+                <option>ST. Vincent Pallotti College of Engineering & Technology, Nagpur </option>
+                <option>STMEI's Sandipani Technical Campus-Faculty of Engineering, Latur. </option>
+                <option>Sahakar Maharshee Shankarrao Mohite Patil nstitute of Technology & Research, Akluj </option>
+                <option>Sahyadri Valley College of Engineering & Technology, Rajuri, Pune. </option>
+                <option>Samarth Education Trust's Arvind Gavali College Of Engineering Panwalewadi, Varye,Satara.
+                </option>
+                <option>Samarth Group of nstitutions, Bangarwadi, Post Belhe Tal. Junnar Dist. Pune </option>
+                <option>Samridhi Sarwajanik Charitable Trust, Jhulelal nstitute of Technology, Nagpur </option>
+                <option>Sandip Foundation's, Sandip nstitute of Engineering & Management, Nashik </option>
+                <option>Sandip Foundation, Sandip nstitute of Technology and Research Centre, Mahiravani, Nashik
+                </option>
+                <option>Sanghavi College of Engineering, Varvandi, Nashik. </option>
+                <option>Sanjivani Rural Education Society's Sanjivani College of Engineering, Kopargaon </option>
+                <option>Sanmarg Shikshan Sanstha's Smt. Radhikatai Pandav College of Engineering, Nagpur </option>
+                <option>Sanmarg Shikshan Sanstha, Mandukarrao Pandav College of Engineering, Bhandara </option>
+                <option>Sanmati Engineering College, Sawargaon Barde, Washim </option>
+                <option>Sant Gadge Baba Amravati University,Amravati </option>
+                <option>Sant Gajanan Maharaj College of Engineering, Gadhinglaj </option>
+                <option>Saraswati Education Society's Saraswati College of Engineering,Kharghar Navi Mumbai </option>
+                <option>Sardar Patel College of Engineering, Andheri </option>
+                <option>Sarvasiddhanta Education Soc's Nuva College of Engineering and Technology, Nagpur </option>
+                <option>Shahajirao Patil Vikas Pratishthan, S.B.Patil College of Engineering, Vangali, Tal. ndapur
+                </option>
+                <option>Shanti Education Society, A.G. Patil nstitute of Technology, Soregaon, Solapur(North) </option>
+                <option>Sharad nstitute of Technology College of Engineering, Yadrav(Ichalkaranji) </option>
+                <option>Shetkari Shikshan Mandal's Pad. Vasantraodada Patil nstitute of Technology, Budhgaon, Sangli
+                </option>
+                <option>Shivajirao S. Jondhale College of Engineering, Dombivali,Mumbai </option>
+                <option>Shivnagar Vidya Prasarak Mandal's College of Engineering, Malegaon-Baramati </option>
+                <option>Shramsadhana Bombay Trust, College of Engineering & Technology, Jalgaon </option>
+                <option>Shree Gajanan Maharaj Shikshan Prasarak Manda'l Sharadchandra Pawar College of Engineering,
+                  Dumbarwadi </option>
+                <option>Shree L.R. Tiwari College of Engineering, Mira Road, Mumbai </option>
+                <option>Shree Ramchandra College of Engineering, Lonikand,Pune </option>
+                <option>Shree Santkrupa Shikshan Sanstha, Shree Santkrupa nstitute Of Engineering & Technology, Karad
+                </option>
+                <option>Shree Tuljabhavani College of Engineering, Tuljapur </option>
+                <option>Shree Yash Pratishthan, Shreeyash College of Engineering and Technology, Aurangabad </option>
+                <option>Shri Guru Gobind Singhji nstitute of Engineering and Technology, Nanded </option>
+                <option>Shri Hanuman Vyayam Prasarak Mandals College of Engineering & Technology, Amravati </option>
+                <option>Shri Pandurang Pratishtan, Karmayogi Engineering College, Shelve, Pandharpur </option>
+                <option>Shri Ramdeobaba College of Engineering and Management, Nagpur </option>
+                <option>Shri Sant Gajanan Maharaj College of Engineering,Shegaon </option>
+                <option>Shri Shivaji Education Society's College of Engineering and Technology, Akola </option>
+                <option>Shri Shivaji Vidya Prasarak Sanstha's Late Bapusaheb Shivaji Rao Deore College of
+                  Engineering,Dhule </option>
+                <option>Shri Vile Parle Kelvani Mandal's Dwarkadas J. Sanghvi College of Engineering, Vile Parle,Mumbai
+                </option>
+                <option>Shri Vithal Education and Research nstitute's College of Engineering, Pandharpur </option>
+                <option>Shri. Ambabai Talim Sanstha's Sanjay Bhokare Group of nstitutes, Miraj </option>
+                <option>Shri. Balasaheb Mane Prasarak Mandals, Ashokrao Mane Group of nstitutions, Kolhapur </option>
+                <option>Shri. Dadasaheb Gawai Charitable Trust's Dr. Smt. Kamaltai Gawai nstitute of Engineering &
+                  Technology, Darapur, Amravati </option>
+                <option>Shri. Jaykumar Rawal nstitute of Technology, Dondaicha. </option>
+                <option>Shri. Sai Shikshan Sanstha, Nagpur nstitute of Technology, Nagpur </option>
+                <option>Shri. Vile Parle Kelavani Mandal's nstitute of Technology, Dhule </option>
+                <option>Shri.Someshwar Shikshan Prasarak Mandals, Someshwar Engineering College, Someshwar Nagar
+                </option>
+                <option>Shriram Gram Vikas Shikshan Sanstha, Vilasrao Deshmukh College of Engineering and Technology,
+                  Nagpur </option>
+                <option>Siddhivinayak Technical Campus, School of Engineering & Research Technology, Shirasgon, Nile
+                </option>
+                <option>Sinhagad nstitute of Technology, Lonavala </option>
+                <option>Sinhgad Academy of Engineering, Kondhwa (BK) Kondhwa-Saswad Road, Pune </option>
+                <option>Sinhgad College of Engineering, Vadgaon (BK), Pune </option>
+                <option>Sinhgad Technical Education Society's Smt. Kashibai Navale College of Engineering,Vadgaon,Pune
+                </option>
+                <option>Sinhgad Technical Education Society, Sinhgad nstitute of Technology and Science, Narhe
+                  (Ambegaon) </option>
+                <option>Sipna Shikshan Prasarak Mandal College of Engineering & Technology, Amravati </option>
+                <option>Sir Shantilal Badjate Charitable Trust's S. B. Jain nstitute of technology, Management &
+                  Research, Nagpur </option>
+                <option>Smt. ndira Gandhi College of Engineering, Navi Mumbai </option>
+                <option>St. Francis nstitute of Technology,Borivali, Mumbai </option>
+                <option>Suman Ramesh Tulsiani Technical Campus: Faculty of Engineering, Kamshet,Pune. </option>
+                <option>Suryodaya College of Engineering & Technology, Nagpur </option>
+                <option>T.M.E. Society's J.T.Mahajan College of Engineering, Faizpur </option>
+                <option>TSSM's Bhivarabai Sawant College of Engineering and Research, Narhe, Pune </option>
+                <option>TSSMS's Pd. Vasantdada Patil nstitute of Technology, Bavdhan, Pune </option>
+                <option>Tatyasaheb Kore nstitute of Engineering and Technology, Warananagar </option>
+                <option>Terna Engineering College, Nerul, Navi Mumbai </option>
+                <option>Terna Public Charitable Trust's College of Engineering, Osmanabad </option>
+                <option>Thadomal Shahani Engineering College, Bandra, Mumbai </option>
+                <option>Thakur College of Engineering and Technology, Kandivali, Mumbai </option>
+                <option>Universal College of Engineering & Research, Sasewadi </option>
+                <option>Universal College of Engineering,Kaman Dist. Palghar </option>
+                <option>University Department of Chemical Technology, Aurangabad </option>
+                <option>University nstitute of Chemical Technology, North Maharashtra University, Jalgaon </option>
+                <option>V M nstitute of Engineering and Technology, Dongargaon, Nagpur </option>
+                <option>VPM's Maharshi Parshuram College of Engineering, Velneshwar, Ratnagiri. </option>
+                <option>Veermata Jijabai Technological nstitute(VJTI), Matunga, Mumbai </option>
+                <option>Vidarbha Bahu-Uddeshiya Shikshan Sanstha's Tulshiramji Gaikwad Patil College of Engineering &
+                  Technology, Nagpur </option>
+                <option>Vidya Niketan College of Engineering, Bota Sangamner </option>
+                <option>Vidya Pratishthan's Kamalnayan Bajaj nstitute of Engineering & Technology, Baramati Dist.Pune
+                </option>
+                <option>Vidya Vikas Pratishthan nstitute of Engineering and Technology, Solapur </option>
+                <option>Vidyalankar nstitute of Technology,Wadala, Mumbai </option>
+                <option>Vidyavardhini's College of Engineering and Technology, Vasai </option>
+                <option>Vighnaharata Trust's Shivajirao S. Jondhale College of Engineering & Technology, Shahapur,
+                  Asangaon, Dist Thane </option>
+                <option>Vilasrao Deshmukh Foundation Group of nstitutions, Latur </option>
+                <option>Vishvatmak Jangli Maharaj Ashram Trust's Vishvatmak Om Gurudev College of Engineering,
+                  Mohili-Aghai, Shahpur. </option>
+                <option>Vishwabharati Academy's College of Engineering, Ahmednagar </option>
+                <option>Vishwaniketan's nstitute of Management Entrepreneurship and Engineering Technology(i MEET),
+                  Khalapur Dist Raigad </option>
+                <option>Vision Buldhana Educational & Welfare Society's Pankaj Laddhad nstitute of Technology &
+                  Management Studies, Yelgaon </option>
+                <option>Vivekanand Education Society's nstitute of Technology, Chembur, Mumbai </option>
+                <option>WATUMULL NSTITUTE OF ELECTRONICS ENGINEERING & COMPUTER TECHNOLOGY, ULHASNAGAR </option>
+                <option>Wainganga College of Engineering and Management, Dongargaon, Nagpur </option>
+                <option>Walchand College of Engineering, Sangli </option>
+                <option>Walchand nstitute of Technology, Solapur </option>
+                <option>Xavier nstitute Of Engineering C/O Xavier Technical nstitute,Mahim,Mumbai </option>
+                <option>Yashoda Technical Campus, Wadhe, Satara. </option>
+                <option>Yeshwantrao Chavan College of Engineering,Wanadongri, Nagpur </option>
+                <option>Zeal Education Society's Zeal College of Engineering & Reserch, Narhe, Pune </option>
+                <option>deal nstitute of Technology, Wada, Dist.Thane </option>
+                <option>ndala College Of Engineering, Bapsai Tal.Kalyan </option>
+                <option>ndira College of Engineering & Management, Pune </option>
+                <option>nstitute of Chemical Technology, Matunga, Mumbai </option>
+                <option>nternational Centre of Excellence in Engineering & Management, Aurangabad. </option>
+                <option>nternational nstitute of nformation Technology (I²IT), Pune. </option>
+              </select>
+            </div>
+            <div class="field padding-bottom--24">
+              <label for="category">Category</label>
+              <input type="text" name="category" placeholder="Your Category eg. GOPEN" autofocus autocomplete="off">
+            </div>
+            <div>
+              <label>
+                <h6>Choose engineering branch</h6>
+              </label>
+              <div style="margin-left: 15px;">
+                <label>
+                  <input type="radio" name="Branch" value="2">Computer and Related Branches
+                </label>
+                <label>
+                  <input type="radio" name="Branch" value="3">Electronics and Related Branches
+                </label>
+                <label>
+                  <input type="radio" name="Branch" value="4">Mechanical and Related Branches
+                </label>
+                <label>
+                  <input type="radio" name="Branch" value="1">Civil and Related Branches
+                </label>
+                <label>
+                  <input type="radio" name="Branch" value="6">Instrumentation and Control
+                </label>
+                <label>
+                  <input type="radio" name="Branch" value="5">Other except Above branches
+                </label>
+              </div>
+              <br>
+            </div>
+            <div class="field padding-bottom--24">
+              <input type="submit" name="submit" value="Continue">
+            </div>
+          </div>
+        </div>
+        <div class="footer-link padding-top--24">
+          <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
+            <span><a href="http://127.0.0.1:5000/">©Group13</a></span>
+            <span><a href="#">Contact</a></span>
+            <span><a href="#">Privacy & terms</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</form>
+{% endblock %}
